@@ -11,7 +11,7 @@
 \usepackage{booktabs}
 
 %----------------------------------------------------------------------------------------
-%	TITLE PAGE
+%  TITLE PAGE (Slide 1)
 %----------------------------------------------------------------------------------------
 
 \title[LaTeX]{An Introduction to LaTeX}
@@ -32,7 +32,7 @@ New York Institute of Technology \\
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	What is LaTeX? (Slide 1)
+% What is LaTeX? (Slide 2)
 %----------------------------------------------------------------------------------------
 
 \section{What is LaTeX?}
@@ -46,7 +46,7 @@ LaTeX is a document preparation typesetting system that uses markup tags to crea
 
 \\~\\
 
-LaTeX internally uses TeX is its typesetting engine and supports use of various packages. 
+LaTeX internally uses TeX is its typesetting engine and supports use of various packages.
 
 \\~\\
 
@@ -55,7 +55,7 @@ A Package named "BEAMER" was used to create this presentation.
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	Features of LaTeX (Slide 2)
+% Features of LaTeX (Slide 3)
 %----------------------------------------------------------------------------------------
 
 \subsection{Features of LaTeX}
@@ -74,13 +74,12 @@ LaTeX is primarily known for its rich set of features that allow you to format t
 \item Theorems
 \item Bullets
 \item Numbered Bullets
-\item SLIDE 9
-\item SLIDE 10
+\item Figures
 \end{itemize}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	Blocks (Slide 3)
+% Blocks (Slide 4)
 %----------------------------------------------------------------------------------------
 
 \begin{frame}
@@ -94,7 +93,7 @@ LaTeX is primarily known for its rich set of features that allow you to format t
 \\~\\
 \textbackslash end \{block\}
 
-\end{block}    
+\end{block}
 
 \\~\\
 
@@ -110,7 +109,7 @@ Blocks can be used to place emphases on a certain formula or point
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	Tables (Slide 4)
+% Tables (Slide 5)
 %----------------------------------------------------------------------------------------
 
 \begin{frame}
@@ -135,7 +134,7 @@ Here is an example of a table in LaTeX
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	Formulas (Slide 5)
+% Formulas (Slide 6)
 %----------------------------------------------------------------------------------------
 
 \begin{frame}
@@ -151,7 +150,7 @@ $E = mc^2$
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	Theorems (Slide 6)
+% Theorems (Slide 7)
 %----------------------------------------------------------------------------------------
 
 \begin{frame}[fragile]
@@ -167,58 +166,104 @@ This verbatim box allows us to see the code used to create the previous Theorem 
 
 \begin{example}[Theorem Slide Code]
 \begin{verbatim}
-	\begin{frame}
-	\frametitle{Theorem}
-	\begin{theorem}[Albert Einstein’s Famous Formula]
-	$E = mc^2$
-	\end{theorem}
-	\end{frame}\end{verbatim}
+ \begin{frame}
+ \frametitle{Theorem}
+ \begin{theorem}[Albert Einstein’s Famous Formula]
+ $E = mc^2$
+ \end{theorem}
+ \end{frame}\end{verbatim}
 \end{example}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	Bullets (Slide 7)
+% Bullets (Slide 8)
 %----------------------------------------------------------------------------------------
 
 \begin{frame}
 \frametitle{Bullets}
 
-Bullets
+Inserting bullets in LaTeX is easy.
+
+\begin{block}{Bullet Code}
+\textbackslash begin\{itemize\}
+\\
+\hspace{1cm}\textbackslash item First Item
+\\
+\hspace{1cm}\textbackslash item Second Item
+\\
+\textbackslash end\{itemize\}
+\end{block}
+
+\begin{example}[Bullet]
+\begin{itemize}
+\item First Item
+\item Second Item
+\end{itemize}
+\end{example}
+
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	Numbered Bullets (Slide 8)
+% Numbered Bullets (Slide 9)
 %----------------------------------------------------------------------------------------
 
 \begin{frame}
 \frametitle{Numbered Bullets}
 
-Numbered Bullets
+Inserting numbered bullets in LaTeX uses similar syntax as bullets.
+
+\begin{block}{Numbered Bullet Code}
+\textbackslash begin\{enumerate\}
+\\
+\hspace{1cm}\textbackslash item First Item
+\\
+\hspace{1cm}\textbackslash item Second Item
+\\
+\textbackslash end\{enumerate\}
+\end{block}
+
+\begin{example}[Numbered Bullet]
+\begin{enumerate}
+\item First Item
+\item Second Item
+\end{enumerate}
+\end{example}
+
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	? (Slide 9)
+% Figures(Slide 10)
 %----------------------------------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Slide 9}
+\frametitle{Figures}
 
-Slide 9
+You can insert figures into LaTeX
+
+\begin{block}{Inserting Figure Code}
+\textbackslash begin\{figure\}
+\\
+\hspace{1cm}\texbackslash centering
+\\
+\hspace{1cm}\texbackslash includegraphics \{name of the figure file\}
+\\
+\hspace{1cm}\texbackslash caption\{Put the caption in here\}
+\\
+\textbackslash end\{figure\}
+\end{block}
+
+\begin{example} [Figure]
+\begin{figure}
+\centering
+\includegraphics[width=0.6\extwidth]{Sample fig.png}
+\caption{This is a sample figure}
+\end{figure}
+\end{example}
+
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	? (Slide 10)
-%----------------------------------------------------------------------------------------
-
-\begin{frame}
-\frametitle{Slide 10}
-
-Slide 10
-\end{frame}
-
-
-%----------------------------------------------------------------------------------------
-%	END
+% END
 %----------------------------------------------------------------------------------------
 
 \end{document} 
