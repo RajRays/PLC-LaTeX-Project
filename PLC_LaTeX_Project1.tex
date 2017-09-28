@@ -1,0 +1,224 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+
+\usetheme{Madrid}
+
+\usecolortheme{whale}
+
+}
+
+\usepackage{booktabs}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[LaTeX]{An Introduction to LaTeX}
+
+\author[Programming Language Concepts - CSCI 318]{Rajendra Bhagroo, Chris Guevarra, Kim Myeongkeun, Thomas Lavenziano}
+
+\institute[NYIT]
+{
+New York Institute of Technology \\
+\medskip
+}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	What is LaTeX? (Slide 1)
+%----------------------------------------------------------------------------------------
+
+\section{What is LaTeX?}
+
+\subsection{Overview of LaTeX}
+
+\begin{frame}
+\frametitle{What is LaTeX?}
+
+LaTeX is a document preparation typesetting system that uses markup tags to create structure within a document.
+
+\\~\\
+
+LaTeX internally uses TeX is its typesetting engine and supports use of various packages. 
+
+\\~\\
+
+A Package named "BEAMER" was used to create this presentation.
+
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	Features of LaTeX (Slide 2)
+%----------------------------------------------------------------------------------------
+
+\subsection{Features of LaTeX}
+
+\begin{frame}
+\frametitle{Features of LaTeX}
+
+LaTeX is primarily known for its rich set of features that allow you to format text in specials ways to create objects such as ...
+
+\\~\\
+
+\begin{itemize}
+\item Blocks
+\item Tables
+\item Formulas
+\item Theorems
+\item Bullets
+\item Numbered Bullets
+\item SLIDE 9
+\item SLIDE 10
+\end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	Blocks (Slide 3)
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Blocks}
+
+\begin{block} {Block Syntax}
+
+\textbackslash begin \{block\} \{Block Name\}
+\\~\\
+    Text Within Block
+\\~\\
+\textbackslash end \{block\}
+
+\end{block}    
+
+\\~\\
+
+
+\begin{block}{Block Usage}
+Blocks can be used to place emphases on a certain formula or point
+\end{block}
+
+\begin{block}{Pythagorean Theorem}
+\[ A^2 + B^2 = C^2 \]
+\end{block}
+
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	Tables (Slide 4)
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Tables}
+
+Here is an example of a table in LaTeX
+
+\\~\\
+
+\begin{table}
+\begin{tabular}{l l l 1}
+\toprule
+\textbf{Day1} & \textbf{Day2} & \textbf{Day3} & \textbf{Day4} \\
+\midrule
+100°F & 91°F & 88°F & 86°F \\
+ 87°F & 83°F & 84°F & 83°F \\
+ 80°F & 77°F & 75°F & 79°F \\
+\bottomrule
+\end{tabular}
+\caption{Temperatures Throughout The Day}
+\end{table}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	Formulas (Slide 5)
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Formulas}
+
+LaTeX allows you to write simple, yet elegant formulas
+
+\\~\\
+
+\begin{theorem}[Albert Einstein’s Famous Formula]
+$E = mc^2$
+\end{theorem}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	Theorems (Slide 6)
+%----------------------------------------------------------------------------------------
+
+\begin{frame}[fragile]
+\frametitle{How To Add Theorems}
+
+Theorems allow for longer formulas and text blocks, even allowing native TeX code to be represented!
+
+\\~\\
+
+This verbatim box allows us to see the code used to create the previous Theorem slide
+
+\\~\\
+
+\begin{example}[Theorem Slide Code]
+\begin{verbatim}
+	\begin{frame}
+	\frametitle{Theorem}
+	\begin{theorem}[Albert Einstein’s Famous Formula]
+	$E = mc^2$
+	\end{theorem}
+	\end{frame}\end{verbatim}
+\end{example}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	Bullets (Slide 7)
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Bullets}
+
+Bullets
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	Numbered Bullets (Slide 8)
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Numbered Bullets}
+
+Numbered Bullets
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	? (Slide 9)
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Slide 9}
+
+Slide 9
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	? (Slide 10)
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Slide 10}
+
+Slide 10
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%	END
+%----------------------------------------------------------------------------------------
+
+\end{document} 
